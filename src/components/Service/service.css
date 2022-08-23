@@ -1,0 +1,13 @@
+.web-development,.mobile-app,.user-interface{
+    border-radius: 3%;
+    box-shadow: -3px -3px 7px #15213d,
+                3px 3px 5px #15213d;
+    transition: all 500ms ease;
+    cursor: pointer;
+    margin-bottom: 4%;
+    padding: 4%;
+    width: 100%;
+}
+.web-development:hover, .mobile-app:hover, .user-interface:hover{
+    transform: scale(1.1);
+}

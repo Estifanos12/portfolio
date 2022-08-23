@@ -1,0 +1,38 @@
+html{
+    scroll-behavior: smooth;
+}
+header{
+    height: fit-content;
+    background: url("../assets/img/background.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0 0;
+    background-color: #000;
+}
+.backToTop{
+    position: fixed; 
+    bottom: 25px;
+    right: 30px;
+    transition: all 500ms ease;
+    animation: movebtn 3s ease-in-out infinite; 
+    z-index: 99; 
+}
+
+@keyframes movebtn {
+    0%{
+      transform: translateY(0px);
+    }
+    25%{
+      transform: translateY(10px);
+    }
+    50%{
+      transform: translateY(0px);
+    }
+    75%{
+      transform: translateY(-10px);
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  }
