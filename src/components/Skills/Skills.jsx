@@ -4,13 +4,13 @@ import {SiHtml5,SiCss3,SiJavascript,SiReact,SiVuedotjs,SiNodedotjs,SiExpress,SiM
 
 const Skills = ()=>{
     return(
-        <div className="skills text-white xl:pt-[8%] flex flex-col justify-center items-center">
-                <div className="title   ">
+        <div className="skills text-white xl:pt-[5%] flex flex-col justify-center items-center">
+                <div className="title">
                     <TypeAnimation
                         sequence={['Skills and Experiences', 1000]}
                         repeat={Infinity}
                         cursor={true}
-                        className=" text-center text-[33px] font-bold xl:text-[42px] pt-[20%] pb-[20%] xl:mb-[6%] xl:p-0"
+                        className=" text-center text-[33px] font-bold xl:text-[42px] pt-[20%] pb-[20%] xl:mb-[2%] xl:p-0"
                     />
                     <div className="skill grid grid-cols-2 gap-10 md:grid-cols-4 ml-3 mr-3 xl:grid-cols-5 xl:gap-5">
 

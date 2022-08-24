@@ -19,14 +19,13 @@ import Skills from './Skills/Skills'
 
 const Portfolio = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [height, setHeight] = useState('');
 
   const {ref,inView} = useInView()
   const animation = useAnimation()
 
   const variant = {
     visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
-    hidden: { opacity: 0, scale: 0 }
+    hidden: { opacity: 0, scale: 1 }
   };
   
   useEffect(()=>{
@@ -270,19 +269,17 @@ const Portfolio = () => {
 
       <body ref={ref} className="bg-[#0B243A]">
         <div className="service-wrapper"  id="services">
-          <motion.div className="big-device-service hidden xl:block"
+          <motion.div className="big-device-service xl:block"
             animate={animation}
             initial = "hidden"
             variants={variant}
           >
             <Service />
           </motion.div>
-          <div className="mobile-device-service xl:hidden">
-            <Service / >
-          </div>
+      
         </div>
 
-        <div ref={ref} className="skills-wrapper" id="skills">
+        <div className="skills-wrapper" id="skills">
           <Skills />
         </div>
 

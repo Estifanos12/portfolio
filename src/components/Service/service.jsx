@@ -9,7 +9,7 @@ const Service = ()=>{
     return(
         <div className="service text-white xl:pt-[8%]">
             
-                <div className="title text-center text-[33px] font-bold xl:text-[42px] pt-[20%] pb-[20%] xl:mb-[6%] xl:p-0  ">
+                <div className="title text-center text-[33px] font-bold xl:text-[42px] pt-[20%] pb-[20%] xl:mb-[6%] xl:p-0">
                 <TypeAnimation
                     sequence={['Service Provide For Clients', 1000]}
                     repeat={Infinity}
