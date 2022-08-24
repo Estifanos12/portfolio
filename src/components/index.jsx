@@ -268,7 +268,7 @@ const Portfolio = () => {
         )}{' '}
       </div>
 
-      <body ref={ref} className="bg-[#0F172A]">
+      <body ref={ref} className="bg-[#0B243A]">
         <div className="service-wrapper"  id="services">
           <motion.div className="big-device-service hidden xl:block"
             animate={animation}
