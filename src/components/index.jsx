@@ -269,13 +269,18 @@ const Portfolio = () => {
       </div>
 
       <body ref={ref} className="bg-[#0F172A]">
-        <motion.div className="service-wrapper" id="services"
-          animate={animation}
-          initial = "hidden"
-          variants={variant}
-        >
-          <Service />
-        </motion.div>
+        <div className="service-wrapper"  id="services">
+          <motion.div className="big-device-service hidden xl:block"
+            animate={animation}
+            initial = "hidden"
+            variants={variant}
+          >
+            <Service />
+          </motion.div>
+          <div className="mobile-device-service xl:hidden">
+            <Service / >
+          </div>
+        </div>
 
         <div ref={ref} className="skills-wrapper" id="skills">
           <Skills />

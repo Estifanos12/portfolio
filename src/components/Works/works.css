@@ -8,6 +8,3 @@
     padding: 4%;
     width: 100%;
 }
-.web-development:hover, .mobile-app:hover, .user-interface:hover{
-    transform: scale(1.1);
-}
