@@ -20,14 +20,17 @@ import Skills from './Skills/Skills'
 const Portfolio = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const [start, setStart] = useState(0);
+
   const {ref,inView} = useInView()
+
   const animation = useAnimation()
 
   const variant = {
     visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
-    hidden: { opacity: 0, scale: 1 }
+    hidden: { opacity: 0, scale: 0.7 }
   };
-  
+
   useEffect(()=>{
     if(inView){
       animation.start('visible')
@@ -35,6 +38,7 @@ const Portfolio = () => {
     if(!inView){
       animation.start('hidden')
     }
+
   },[animation,inView])
 
   const [showTopBtn, setShowTopBtn] = useState(false);

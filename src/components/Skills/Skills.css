@@ -4,4 +4,11 @@
              20px 20px 60px #0e2d48;
     transition: all 500ms ease;
     cursor: pointer;
+    width: fit-content;
    }
+
+.experience-wrapper{
+    border-radius: 5%;
+    box-shadow:  -20px -20px 60px #081b2c,
+             20px 20px 60px #0e2d48;   
+}
