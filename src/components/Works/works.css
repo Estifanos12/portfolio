@@ -8,3 +8,39 @@
     padding: 4%;
     width: 100%;
 }
+img{
+    width: 80%;
+}
+.project{
+    border-radius: 5%;
+    box-shadow:  -20px -20px 60px #081b2c,
+             20px 20px 60px #0e2d48;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+.front{
+    height: 100%;
+    width: 100%;
+}
+
+.front img {
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+.back{
+    width: 340px;
+    height: 444px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.front p{
+    margin: 20px;
+    width: 300px;
+    font-family: poppins;
+}
